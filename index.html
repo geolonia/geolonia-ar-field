@@ -13,37 +13,14 @@
         margin: 0;
         padding: 0;
       }
-      #geolonia-ar {
+      .geolonia {
         width: 100%;
         height: 100%;
       }
     </style>
   </head>
-  <body class="body">
-    <div id="geolonia-ar"></div>
-    <script src="https://api.tilecloud.io/dev/embed?geolonia-api-key=YOUR-API-KEY"></script>
-    <script>
-      // TODO: Fix window.geolonia.Map
-      // TODO: use `data-style=@user/repo` scheme
-
-      const Map = window.mapboxgl.Map;
-
-      const styleUrl =
-        window.location.host === "127.0.0.1"
-          ? "./style.dev.json"
-          : "./style.json";
-
-      const style = fetch(styleUrl)
-        .then(res => res.json())
-        .then(style => {
-          const map = new Map({
-            container: "geolonia-ar",
-            style,
-            hash: true,
-            maxZoom: 22,
-            minZoom: 17.5
-          });
-        });
-    </script>
+  <body>
+    <div class="geolonia" data-style="@geolonia/quest"></div>
+    <script src="https://api.geolonia.com/dev/embed?geolonia-api-key=YOUR-API-KEY"></script>
   </body>
 </html>
