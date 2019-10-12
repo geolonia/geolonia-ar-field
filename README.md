@@ -1,6 +1,6 @@
-# Geolonia AR Field
+# style @geolonia/quest
 
-This repository hosts an experimental `style.json` for Mapbox GL JS.
+This repository hosts an `style.json` for Mapbox GL JS.
 
 ## Development
 
