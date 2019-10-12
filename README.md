@@ -1,4 +1,4 @@
-# style @geolonia/quest
+# style @geolonia/slime
 
 This repository hosts an `style.json` for Mapbox GL JS.
 
