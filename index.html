@@ -27,8 +27,13 @@
       // TODO: use `data-style=@user/repo` scheme
 
       const Map = window.mapboxgl.Map;
-      console.log(Map.prototype.pitch);
-      const style = fetch("./style.dev.json")
+
+      const styleUrl =
+        window.location.host === "127.0.0.1"
+          ? "./style.dev.json"
+          : "./style.json";
+
+      const style = fetch(styleUrl)
         .then(res => res.json())
         .then(style => {
           const map = new Map({

@@ -273,8 +273,8 @@
         "grass"
       ],
       "paint": {
-        "fill-color": "#d8e8c8",
-        "fill-opacity": 1
+        "fill-color": "#000",
+        "fill-opacity": 0.3
       }
     },
     {
@@ -288,8 +288,8 @@
         "public_park"
       ],
       "paint": {
-        "fill-color": "#d8e8c8",
-        "fill-opacity": 0.8
+        "fill-color": "#000",
+        "fill-opacity": 0.3
       }
     },
     {
@@ -493,7 +493,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": "rgba(152, 209, 252, 1)"
+        "fill-color": "rgba(39, 82, 156, 1)"
       }
     },
     {
@@ -1511,23 +1511,27 @@
           ]
         },
         "line-width": {
-          "base": 1.2,
+          "base": 0.6,
           "stops": [
             [
-              12,
-              0.5
+              18,
+              20
             ],
             [
-              13,
-              1
-            ],
-            [
-              14,
-              4
+              19,
+              40
             ],
             [
               20,
-              15
+              60
+            ],
+            [
+              21,
+              80
+            ],
+            [
+              22,
+              100
             ]
           ]
         }
@@ -1562,15 +1566,15 @@
         "line-color": "rgba(222, 222, 222, 1)",
         "line-opacity": 1,
         "line-width": {
-          "base": 1.2,
+          "base": 0.8,
           "stops": [
             [
-              8,
+              18,
               1.5
             ],
             [
-              20,
-              17
+              22,
+              100
             ]
           ]
         }
@@ -1602,7 +1606,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "rgba(222, 222, 222, 1)",
+        "line-color": "rgba(60, 222, 255, 1)",
         "line-opacity": {
           "stops": [
             [
@@ -1952,21 +1956,44 @@
       },
       "paint": {
         "line-color": "#fff",
-        "line-opacity": 1,
-        "line-width": {
-          "base": 1.2,
+        "line-opacity": {
           "stops": [
             [
-              13.5,
+              17,
               0
             ],
             [
-              14,
-              2.5
+              18,
+              0
+            ],
+            [
+              21,
+              1
+            ]
+          ]
+        },
+        "line-width": {
+          "base": 0.6,
+          "stops": [
+            [
+              18,
+              10
+            ],
+            [
+              19,
+              30
             ],
             [
               20,
-              11.5
+              50
+            ],
+            [
+              21,
+              70
+            ],
+            [
+              22,
+              90
             ]
           ]
         }
@@ -2000,19 +2027,27 @@
       "paint": {
         "line-color": "rgba(255, 255, 255, 1)",
         "line-width": {
-          "base": 1.2,
+          "base": 0.6,
           "stops": [
             [
-              6.5,
-              0
+              18,
+              20
             ],
             [
-              8,
-              0.5
+              19,
+              40
             ],
             [
               20,
-              13
+              60
+            ],
+            [
+              21,
+              80
+            ],
+            [
+              22,
+              100
             ]
           ]
         }
@@ -2053,19 +2088,27 @@
       "paint": {
         "line-color": "rgba(255, 255, 255, 1)",
         "line-width": {
-          "base": 1.2,
+          "base": 1,
           "stops": [
             [
-              8.5,
-              0
+              18,
+              20
             ],
             [
-              9,
-              0.5
+              19,
+              40
             ],
             [
               20,
-              18
+              60
+            ],
+            [
+              21,
+              80
+            ],
+            [
+              22,
+              100
             ]
           ]
         }
@@ -2109,16 +2152,24 @@
           "base": 1.2,
           "stops": [
             [
-              6.5,
-              0
+              18,
+              20
             ],
             [
-              7,
-              0.5
+              19,
+              40
             ],
             [
               20,
-              18
+              60
+            ],
+            [
+              21,
+              80
+            ],
+            [
+              22,
+              100
             ]
           ]
         }
@@ -2802,38 +2853,6 @@
       }
     },
     {
-      "id": "cablecar",
-      "type": "line",
-      "source": "openmaptiles",
-      "source-layer": "transportation",
-      "minzoom": 13,
-      "filter": [
-        "==",
-        "class",
-        "cable_car"
-      ],
-      "layout": {
-        "visibility": "visible",
-        "line-cap": "round"
-      },
-      "paint": {
-        "line-color": "hsl(0, 0%, 70%)",
-        "line-width": {
-          "base": 1,
-          "stops": [
-            [
-              11,
-              1
-            ],
-            [
-              19,
-              2.5
-            ]
-          ]
-        }
-      }
-    },
-    {
       "id": "cablecar-dash",
       "type": "line",
       "source": "openmaptiles",
@@ -2867,60 +2886,6 @@
           2,
           3
         ]
-      }
-    },
-    {
-      "id": "boundary-land-level-4",
-      "type": "line",
-      "source": "openmaptiles",
-      "source-layer": "boundary",
-      "maxzoom": 14,
-      "filter": [
-        "all",
-        [
-          ">=",
-          "admin_level",
-          4
-        ],
-        [
-          "<=",
-          "admin_level",
-          8
-        ],
-        [
-          "!=",
-          "maritime",
-          1
-        ]
-      ],
-      "layout": {
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#9e9cab",
-        "line-dasharray": [
-          3,
-          1,
-          1,
-          1
-        ],
-        "line-width": {
-          "base": 1.4,
-          "stops": [
-            [
-              4,
-              0.4
-            ],
-            [
-              5,
-              1
-            ],
-            [
-              12,
-              2
-            ]
-          ]
-        }
       }
     },
     {
@@ -3239,7 +3204,7 @@
       "type": "symbol",
       "source": "openmaptiles",
       "source-layer": "poi",
-      "minzoom": 16,
+      "minzoom": 19,
       "filter": [
         "all",
         [
@@ -3329,7 +3294,7 @@
       "type": "symbol",
       "source": "openmaptiles",
       "source-layer": "poi",
-      "minzoom": 13,
+      "minzoom": 19,
       "filter": [
         "all",
         [
@@ -3378,145 +3343,6 @@
         "text-color": "#666",
         "text-halo-width": 1,
         "text-halo-color": "#ffffff"
-      }
-    },
-    {
-      "id": "road_oneway",
-      "type": "symbol",
-      "source": "openmaptiles",
-      "source-layer": "transportation",
-      "minzoom": 15,
-      "filter": [
-        "all",
-        [
-          "==",
-          "oneway",
-          1
-        ],
-        [
-          "in",
-          "class",
-          "motorway",
-          "trunk",
-          "primary",
-          "secondary",
-          "tertiary",
-          "minor",
-          "service"
-        ]
-      ],
-      "layout": {
-        "symbol-placement": "line",
-        "icon-image": "oneway",
-        "symbol-spacing": 75,
-        "icon-padding": 2,
-        "icon-rotation-alignment": "map",
-        "icon-rotate": 90,
-        "icon-size": {
-          "stops": [
-            [
-              15,
-              0.5
-            ],
-            [
-              19,
-              1
-            ]
-          ]
-        }
-      },
-      "paint": {
-        "icon-opacity": 0.5
-      }
-    },
-    {
-      "id": "road_oneway_opposite",
-      "type": "symbol",
-      "source": "openmaptiles",
-      "source-layer": "transportation",
-      "minzoom": 15,
-      "filter": [
-        "all",
-        [
-          "==",
-          "oneway",
-          -1
-        ],
-        [
-          "in",
-          "class",
-          "motorway",
-          "trunk",
-          "primary",
-          "secondary",
-          "tertiary",
-          "minor",
-          "service"
-        ]
-      ],
-      "layout": {
-        "symbol-placement": "line",
-        "icon-image": "oneway",
-        "symbol-spacing": 75,
-        "icon-padding": 2,
-        "icon-rotation-alignment": "map",
-        "icon-rotate": -90,
-        "icon-size": {
-          "stops": [
-            [
-              15,
-              0.5
-            ],
-            [
-              19,
-              1
-            ]
-          ]
-        }
-      },
-      "paint": {
-        "icon-opacity": 0.5
-      }
-    },
-    {
-      "id": "highway-name-path",
-      "type": "symbol",
-      "source": "openmaptiles",
-      "source-layer": "transportation_name",
-      "filter": [
-        "in",
-        "class",
-        "motorway",
-        "primary",
-        "secondary",
-        "tertiary",
-        "trunk"
-      ],
-      "layout": {
-        "text-size": {
-          "base": 1,
-          "stops": [
-            [
-              13,
-              12
-            ],
-            [
-              14,
-              13
-            ]
-          ]
-        },
-        "text-font": [
-          "Noto Sans Regular"
-        ],
-        "text-field": "{name}",
-        "symbol-placement": "line",
-        "text-rotation-alignment": "map"
-      },
-      "paint": {
-        "text-halo-color": "#f8f4f0",
-        "text-color": "hsl(30, 23%, 62%)",
-        "text-halo-width": 0.5
       }
     },
     {
