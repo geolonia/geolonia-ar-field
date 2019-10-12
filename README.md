@@ -11,6 +11,8 @@ $ yarn # or npm install
 $ npm start
 ```
 
+Edit `style.dev.json`, for local.
+
 ## build
 
 ```shell
