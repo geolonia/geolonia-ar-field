@@ -17,7 +17,7 @@
       "url": "https://api.geolonia.com/v1/sources?key=YOUR-API-KEY"
     }
   },
-  "sprite": "https://geolonia.github.io/geolonia-ar-field/grass",
+  "sprite": "http://127.0.0.1:8080/grass",
   "glyphs": "https://glyphs.geolonia.com/{fontstack}/{range}.pbf",
   "layers": [
     {

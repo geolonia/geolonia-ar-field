@@ -28,7 +28,7 @@
 
       const Map = window.mapboxgl.Map;
       console.log(Map.prototype.pitch);
-      const style = fetch("./style.json")
+      const style = fetch("./style.dev.json")
         .then(res => res.json())
         .then(style => {
           const map = new Map({

@@ -1,0 +1,15 @@
+{
+  "name": "geolonia-ar-field",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:geolonia/geolonia-ar-field.git",
+  "author": "kamataryo <mugil.cephalus+github.com@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "http-server -o -c-1",
+    "build": "node build.js"
+  },
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  }
+}
