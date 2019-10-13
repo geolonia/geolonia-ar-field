@@ -1,6 +1,6 @@
 {
   "version": 8,
-  "name": "Geolonia AR Field",
+  "name": "geolonia/slime",
   "pitch": 60,
   "zoom": 19,
   "center": [

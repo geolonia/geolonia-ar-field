@@ -1,6 +1,6 @@
 {
   "version": 8,
-  "name": "Geolonia AR Field",
+  "name": "geolonia/slime",
   "pitch": 60,
   "zoom": 19,
   "center": [
@@ -17,7 +17,7 @@
       "url": "https://api.geolonia.com/v1/sources?key=YOUR-API-KEY"
     }
   },
-  "sprite": "https://geolonia.github.io/geolonia-ar-field/grass",
+  "sprite": "https://geolonia.github.io/slime/grass",
   "glyphs": "https://glyphs.geolonia.com/{fontstack}/{range}.pbf",
   "layers": [
     {

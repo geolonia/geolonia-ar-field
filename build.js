@@ -9,7 +9,7 @@ readFile('./style.dev.json')
     JSON.stringify(
       {
         ...style,
-        sprite: 'https://geolonia.github.io/geolonia-ar-field/grass'
+        sprite: 'https://geolonia.github.io/slime/grass'
       },
       null,
       2
